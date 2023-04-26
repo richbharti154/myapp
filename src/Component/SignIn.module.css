@@ -1,0 +1,88 @@
+.mainContainer {
+
+    width: 100%;
+    padding: 10px;
+    height: 100vh;
+    background-color: #bbb;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+}
+
+
+
+.LeftSection {
+    background-color: white;
+    height: 60vh;
+    width: 30%;
+
+
+
+
+
+}
+
+.RightSection {
+    background-color: black;
+    height: 60vh;
+    width: 15%;
+    color: white;
+    text-align: center;
+
+
+
+}
+
+.head {
+    font-size: 0.8rem;
+
+}
+
+.heading {
+    margin-bottom: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 7rem;
+    flex-direction: column;
+
+
+}
+
+.buttonhead {
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    padding: 0, 16px;
+    cursor: pointer;
+    font-family: "Google Sans", arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.25px;
+    border: 0 solid white;
+    border-radius: 10px;
+    color: grey;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box {
+    background-color: aqua;
+    width: 50%;
+    height: 20vh;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: center;
+
+
+}
