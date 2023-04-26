@@ -1,8 +1,8 @@
 
-export default function CustomButton({text,icons,className}){
+export default function Custombutton({text,icon,className}){
     return(
         <div >
-      <button className={className} icons={icons}> {text}</button>
+      <button className={className}>{icon} {text}</button>
         </div>
     )
 }
