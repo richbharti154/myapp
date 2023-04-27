@@ -8,10 +8,11 @@ import { BsApple } from 'react-icons/bs'
 import Custominput from '../../Atom/Custominput/Custominput'
 import Custombutton from '../../Atom/Custombutton/Custombutton'
 export default function SignIn() {
+    const [email, setEmail] = React.useState('');
+    const [password, setPassword] = React.useState('');
     const [user, setUser] = useState(null);
-  const [email, setEmail] = React.useState('');
-  const [password, setPassword] = React.useState('');
-  let nevigate = useNavigate();
+ 
+    let navigate = useNavigate();
 
   useEffect(() => {
     const unsubscribe1 = auth.onAuthStateChanged((users) => {
@@ -21,7 +22,7 @@ export default function SignIn() {
     return unsubscribe1;
   }, []);
 
-  const signOutWithGoogle = () => {
+  const signGoogle = () => {
     auth.signOut().then(() => {
       setUser(null);
     });
@@ -31,7 +32,7 @@ export default function SignIn() {
     
     if(user != null && email != null  && password != null){
       alert("welcome ");
-      nevigate("/Home");
+      navigate("/Home");
     }
    
   }
@@ -51,10 +52,10 @@ export default function SignIn() {
             <Custombutton text="Sign in with Google" icon={<FcGoogle />}
              className={page.gbtn} onClick={signInWithGoogle} />
           ) : (
-            <Custombutton text="Sign out from Google" icon={<FcGoogle />} className={page.gbtn} onClick={signOutWithGoogle} />
+            <Custombutton text="Sign out from Google" icon={<FcGoogle />} className={page.googlebtn} onClick={signGoogle} />
           )}
 
-                <Custombutton text='Sign in with Apple' icon={<BsApple/>} className={page.gbtn}/>
+                <Custombutton text='Sign in with Apple' icon={<BsApple/>} className={page.googlebtn}/>
             </div>
             <div className={page.mainInput}>
                 <h4>Email address</h4>
@@ -62,7 +63,7 @@ export default function SignIn() {
                 <h4>Password</h4>
                 <Custominput type="password" placeholder="Password" className={page.input} value={user ? user.refreshToken : password} />
                 <h4>Forgot Password</h4>
-                <Custombutton onClick={()=> handlesubmit()}text='Sign In'  className={page.sbtn}/>
+                <Custombutton onClick={()=> handlesubmit()}text='Sign In'  className={page.submitbtn}/>
                 
             </div>
             <div>

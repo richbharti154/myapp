@@ -221,27 +221,30 @@ export default function Home() {
                   >
                     <p
                       style={{
-                        fontSize: "14px",
                         fontWeight: "700",
                         marginBottom: "5px",
+                        fontSize: "14px",
+                       
                       }}
                     >
                       {x.title}
                     </p>
                     <p
                       style={{
-                        fontSize: "12px",
                         fontWeight: "400",
                         marginBottom: "5px",
+                        fontSize: "12px",
+                        
                       }}
                     >
                       {x.cost}
                     </p>
                     <p
                        style={{
-                        fontSize: "12px",
                         fontWeight: "400",
                         marginBottom: "5px",
+                        fontSize: "12px",
+                        
                       }}
                     >
                       {x.txt}
