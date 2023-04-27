@@ -1,4 +1,4 @@
-.main {
+.Container{
     width: 100%;
     height: 100%;
     display: flex;
@@ -8,7 +8,7 @@
 }
 
 
-.left {
+.leftSection {
     width: 36.75rem;
     height: 100vh;
     /* position: absolute; */
@@ -18,7 +18,7 @@
     align-items: center;
 }
 
-.left h1 {
+.leftSection h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -26,9 +26,8 @@
     color: #fff;
 }
 
-.right {
+.rightSection {
     width: 53.25rem;
-
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -45,10 +44,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    /* height: 2.75rem;
-right: 26.25rem;
-top: 5.5625rem;
-} */
+    
 }
 .sign{
     font-size: 1rem;
@@ -60,36 +56,40 @@ top: 5.5625rem;
     
 }
 
-.btnmain {
+.mainButton {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: row; */
     gap: 1rem;
 }
 
 .gbtn {
-    width: 11.25rem;
-    height: 1.875rem;
     border-radius: 0.625rem;
     border: none;
     background-color: #fff;
     color: #999999;
+    width: 11.25rem;
+    height: 1.875rem;
+   
 
 }
 
-.form {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    Width: 20.3125rem;
-    Height: 19.8125rem;
+.mainInput {
+    Height: 16.8125rem;
     border-radius: 10px;
     border: none;
     background-color: #fff;
     gap: 1rem;
     padding: 1.875rem;
+    background-color: #fff;
+    gap: 0.08rem;
+    padding: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    Width: 20.3125rem;
+    
 }
 
 .input {

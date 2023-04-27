@@ -1,11 +1,11 @@
 import React from 'react'
-import style from '../Component/Dashboard.module.css'
+import style from '../../Pages/Home/Home.module.css'
 import { MdSpaceDashboard } from "react-icons/md";
 import { AiOutlineTransaction } from "react-icons/ai";
 import { AiOutlineSchedule } from "react-icons/ai";
 import { BiUserCircle } from "react-icons/bi";
 import { IoSettings } from "react-icons/io5";
-export default function Dashboard(){
+export default function Home(){
     const data=[
     {
         name:'Dashboard',
