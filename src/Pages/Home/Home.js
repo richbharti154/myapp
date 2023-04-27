@@ -87,11 +87,11 @@ export default function Home() {
 
 
   return (
-    <div className={style.main}>
-      <div className={style.left}>
-        <div className={style.head}>
+    <div className={style.mainContainer}>
+      <div className={style.leftSection}>
+        <div className={style.head1}>
           <h1>Board.</h1>
-          <div className={style.iconmain}>
+          <div className={style.iconmain1}>
             {arr.map((x) => {
               return (
                 <span className={style.icon}>
@@ -104,20 +104,20 @@ export default function Home() {
             })}
           </div>
         </div>
-        <div className={style.tail}>
+        <div className={style.tail1}>
           <p>Help</p>
           <p>Contact us</p>
         </div>
       </div>
       {/* .............................................. */}
 
-      <div className={style.right}>
+      <div className={style.right1}>
         <div className={style.inner1}>
           <h1>Dashboard</h1>
-          <span className={style.lefttop}>
-            <span className={style.search}>
-              <Custominput placeholder="search" className={style.searchinput} />
-              <AiOutlineSearch className={style.searchicon} />
+          <span className={style.lefttop1}>
+            <span className={style.search1}>
+              <Custominput placeholder="search" className={style.searchinput1} />
+              <AiOutlineSearch className={style.searchicon1} />
             </span>
 
             <FaRegBell />
@@ -177,7 +177,7 @@ export default function Home() {
                 May - June 2021 <AiOutlineDown />
               </p>
             </div>
-            <div className={style.piechart}>
+            <div className={style.piechart1}>
               <span style={{ width: "9.5rem", height: "9.5rem" }}>
                 <Pie data={data2} />;
               </span>
