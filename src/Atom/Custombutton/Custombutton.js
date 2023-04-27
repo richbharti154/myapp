@@ -1,8 +1,8 @@
 
-export default function Custombutton({text,icon,className}){
+export default function Custombutton({text,icon,className,onClick}){
     return(
         <div >
-      <button className={className}>{icon} {text}</button>
+      <button onClick={onClick} className={className}>{icon} {text}</button>
         </div>
     )
 }

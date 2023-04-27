@@ -14,11 +14,11 @@ export default function SignIn() {
   let nevigate = useNavigate();
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged((users) => {
+    const unsubscribe1 = auth.onAuthStateChanged((users) => {
       setUser(users);
     });
 
-    return unsubscribe;
+    return unsubscribe1;
   }, []);
 
   const signOutWithGoogle = () => {
@@ -48,7 +48,8 @@ export default function SignIn() {
             </div>
             <div className={page.mainButton}>
             {user === null ? (
-            <Custombutton text="Sign in with Google" icon={<FcGoogle />} className={page.gbtn} onClick={signInWithGoogle} />
+            <Custombutton text="Sign in with Google" icon={<FcGoogle />}
+             className={page.gbtn} onClick={signInWithGoogle} />
           ) : (
             <Custombutton text="Sign out from Google" icon={<FcGoogle />} className={page.gbtn} onClick={signOutWithGoogle} />
           )}
@@ -57,11 +58,11 @@ export default function SignIn() {
             </div>
             <div className={page.mainInput}>
                 <h4>Email address</h4>
-                <Custominput type="email" placeholder="Email" className={page.input} />
+                <Custominput type="email" placeholder="Email" className={page.input} value={user ? user.email : email}/>
                 <h4>Password</h4>
-                <Custominput type="password" placeholder="Password" className={page.input} />
+                <Custominput type="password" placeholder="Password" className={page.input} value={user ? user.refreshToken : password} />
                 <h4>Forgot Password</h4>
-                <Custombutton text='Sign In'  className={page.sbtn}/>
+                <Custombutton onClick={()=> handlesubmit()}text='Sign In'  className={page.sbtn}/>
                 
             </div>
             <div>
